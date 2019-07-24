@@ -45,59 +45,65 @@ public 폴더는 포함하지 않았습니다.
 
 <h3>V 0.0.5</h3>
 19.06.19
+
 - 주 내용 : socket.io와 socket.io-client를 사용하여 쌍방향 문자 전송 기능 추가
-  + MeetText 추가<br />
-  + 수정 및 보완 해야 할 사항<br />
+  - MeetText 추가<br />
+  - 수정 및 보완 해야 할 사항<br />
     : 텍스트가 추가 됨에 따라 자동 스크롤 기능(완료)<br />
     : 최초 닉네임 설정은 메인페이지에서 할 수 있도록 할 것(완료)<br />
 - 기존 작성된 코드 수정<br />
-  + server.js : socket.io => message 부분 추가<br />
-  + subpages : MeetText 코드 추가 => ChatTopBar, ChatBorder, ChatBar<br />
-  + index.js : State 상태 추가 => stores 참조<br />
-  + css : 일부 수정<br />
+  - server.js : socket.io => message 부분 추가<br />
+  - subpages : MeetText 코드 추가 => ChatTopBar, ChatBorder, ChatBar<br />
+  - index.js : State 상태 추가 => stores 참조<br />
+  - css : 일부 수정<br />
 - 파일 추가<br />
-  + stores : State.js => user, message 상태<br />
-  + subComp : ChatTopBar, ChatBorder, ChatBar<br />
+  - stores : State.js => user, message 상태<br />
+  - subComp : ChatTopBar, ChatBorder, ChatBar<br />
     => 채팅 페이지의 컴포넌트들...<br />
 
 <h3>V 0.0.6</h3>
 19.06.23 <br />
+
 - 주 내용 : 기존에 추가하였던 socket.io 코드 변경 <br />
-  + 사용자 상태 socket.io를 통해서 전달 및 서버에서 가공 <br />
-  + room 기능 구현 : 완벽하지는 않지만 좀 더 보완하면 초기모델 완성 될 듯.. <br />
+  - 사용자 상태 socket.io를 통해서 전달 및 서버에서 가공 <br />
+  - room 기능 구현 : 완벽하지는 않지만 좀 더 보완하면 초기모델 완성 될 듯.. <br />
 
 <h3>V 0.0.7</h3>
 19.06.27 <br />
+
 - 주 내용(리팩토링) : css => scss 변경 진행, 불필요한 js파일 삭제 <br />
 
 <h3>V 0.0.8</h3>
 19.06.30 <br />
+
 - 주 내용 : mobx => observer 모든 JS 파일 적용 <br />
-  + 코드 최적화 진행 <br />
-  + MeetText 페이지내에서 ReStart 기능 추가 <br />
+  - 코드 최적화 진행 <br />
+  - MeetText 페이지내에서 ReStart 기능 추가 <br />
 
 <h3>V 0.0.9 ~ 0.1.0</h3>
 19.07.24 <br/>
+
 - 주 내용 : 새로운 것을 시도 후 다시 복귀...<br/>
-  + Apollo, MongoDB, Graphql 을 사용하여 채팅방 생성 및 저장을 시도 해봄. (07.01 ~ 07.14)<br/>
+  - Apollo, MongoDB, Graphql 을 사용하여 채팅방 생성 및 저장을 시도 해봄. (07.01 ~ 07.14)<br/>
     : CRUD는 성공적.. 방 만들기 / 호출 까지는 가능했으나 삭제는 로직상의 문제로 실패.. (할 수는 있겠는데..)<br/>
     : 이후 문제.. MongoDB, Graphql 숙지가 미흡.. 리졸버, 스키마 작성의 이해가 부족하여 난항을 겪어서 잠정 보류..<br/>
-  + 현재 class 형태를 React hooks 로 변경 후 다시 class.. 일부 함수형태로 수정 (07.01 ~ 07.14)<br/>
-  + 시도 해 본 내용은 작성하기전 해당 예제부터 시작함. 그래서 시간이 오래 걸렸음.<br/>
-  + 07.14 이후 해당 프로젝트 진행 안하고 기초부터 다시 훑어봄 / 다른 웹사이트 제작.. (07.14 ~ 07.23)<br/>
-  + 07.24 : Apollo, MongoDB, Graphql 코드 전부 걷어냄.<br/>
+  - 현재 class 형태를 React hooks 로 변경 후 다시 class.. 일부 함수형태로 수정 (07.01 ~ 07.14)<br/>
+  - 시도 해 본 내용은 작성하기전 해당 예제부터 시작함. 그래서 시간이 오래 걸렸음.<br/>
+  - 07.14 이후 해당 프로젝트 진행 안하고 기초부터 다시 훑어봄 / 다른 웹사이트 제작.. (07.14 ~ 07.23)<br/>
+  - 07.24 : Apollo, MongoDB, Graphql 코드 전부 걷어냄.<br/>
     : socket.io로만 방 생성, 호출, 삭제 구현.<br/>
 - 코드 최적화<br/>
-  + 불필요 코드 / 컴포넌트 삭제<br/>
+  - 불필요 코드 / 컴포넌트 삭제<br/>
 - 상세 설명 추가<br/>
-  + 주석 생성 : 나중에 봐도 알아볼 수 있도록..<br/>
+  - 주석 생성 : 나중에 봐도 알아볼 수 있도록..<br/>
 
 <h3>해보고 싶은 것..</h3>
+
 - webRTC를 사용하여 음성 채팅, 비디오 채팅 구현<br/>
 - 전체적인 디자인 재구성 (UI, UX)<br/>
-  + UX 부분은 사용자 패턴에 따라 페이지 구성..<br/>
-  + 예를 들어 클릭 => css 효과 -> 로딩 화면(무조건) -> css 효과 => 해당 페이지<br/>
-  + 해당 페이지에 머물러 있을시 페이지 알림 : 하단바에 해당이미지만 컬러나오게. 나머지는 회색으로 표시<br/>
+  - UX 부분은 사용자 패턴에 따라 페이지 구성..<br/>
+  - 예를 들어 클릭 => css 효과 -> 로딩 화면(무조건) -> css 효과 => 해당 페이지<br/>
+  - 해당 페이지에 머물러 있을시 페이지 알림 : 하단바에 해당이미지만 컬러나오게. 나머지는 회색으로 표시<br/>
 - 로그인 API 사용해보기.. : 선행 작업 server 작성이 되어야함..<br/>
 
 <h3>기타 사항</h3>
