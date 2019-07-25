@@ -10,9 +10,9 @@
 public 폴더는 포함하지 않았습니다.
 
 - 실행 전 추가 및 변경해주세요.
- - client => public => index.html 생성
- - server.js process.env.NODE_ENV = "development" 설정
- - components => Socket.js => socketIo connect("http://localhost:8080") 변경
+  - client => public => index.html 생성
+  - server.js process.env.NODE_ENV = "development" 설정
+  - components => Socket.js => socketIo connect("http://localhost:8080") 변경
 
 <h1>업데이트 내용 기록</h1>
 <h3>V 0.0.2</h3>
